@@ -1,4 +1,4 @@
-name: "PR Commenter"
+name: "GHA PR Commenter"
 description: "Comments a specific PR or issue"
 branding:
     icon: circle
