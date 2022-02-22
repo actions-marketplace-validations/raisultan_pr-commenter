@@ -3,9 +3,9 @@ import os
 from github import Github
 
 GITHUB_TOKEN: str = os.getenv("GITHUB_TOKEN")
-REPO_NAME: str = os.getenv("INPUT_REPO_NAME")
-ISSUE_NUMBER: str = os.getenv("INPUT_ISSUE_NUMBER")
-COMMENT: str = os.getenv("INPUT_COMMENT")
+REPO_NAME: str = os.getenv("REPO_NAME")
+ISSUE_NUMBER: str = os.getenv("ISSUE_NUMBER")
+COMMENT: str = os.getenv("COMMENT")
 
 def validate_env_vars() -> None:
     if not GITHUB_TOKEN:
