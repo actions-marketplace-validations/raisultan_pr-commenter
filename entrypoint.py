@@ -2,7 +2,7 @@ import os
 
 from github import Github
 
-GITHUB_TOKEN: str = os.getenv("INPUT_GITHUB_TOKEN")
+GITHUB_TOKEN: str = os.getenv("GITHUB_TOKEN")
 REPO_NAME: str = os.getenv("INPUT_REPO_NAME")
 ISSUE_NUMBER: str = os.getenv("INPUT_ISSUE_NUMBER")
 COMMENT: str = os.getenv("INPUT_COMMENT")
