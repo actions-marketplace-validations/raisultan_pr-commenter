@@ -21,7 +21,7 @@ def validate_env_vars() -> None:
 def comment_issue_or_pr(issue_number: int, message: str) -> None:
     g = Github(GITHUB_TOKEN)
     repo = g.get_repo(REPO_NAME)
-    issue = repo.get_issue(number=issue_number)
+    issue = repo.get_issue(number=int(issue_number))
     issue.create_comment(message)
 
 
