@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-RUN update && apt -y upgrade
+RUN apt update && apt -y upgrade
 RUN apt install -y build-essentials
 
 COPY requirements.txt /requirements.txt
