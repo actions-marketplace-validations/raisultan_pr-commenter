@@ -1,0 +1,8 @@
+name: "PR Commenter"
+description: "Comments a specific PR or issue"
+branding:
+    icon: circle
+    color: black
+runs:
+    using: "docker"
+    image: "Dockerfile"
